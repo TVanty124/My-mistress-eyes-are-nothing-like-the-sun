@@ -587,8 +587,7 @@ body{
     width:800px;
 
     transform:
-        translate(-50%,-50%)
-        rotate(-18deg);
+        translate(-50%,-50%);
 
     opacity:1;
 

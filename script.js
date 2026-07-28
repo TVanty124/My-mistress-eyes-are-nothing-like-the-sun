@@ -32,28 +32,11 @@ const scene2TL = gsap.timeline({
 
 });
 
-scene2TL.fromTo(".eye2",
-
-{
-    opacity:1,
-    x:0,
-    y:0,
+gsap.set(".eye2",{
     rotation:-18,
     scale:1
-},
+});
 
-{
-    opacity:1,
-    x:0,
-    y:0,
-    rotation:-18,
-    scale:1,
-    ease:"none"
-},
-
-0
-
-);
 
 
 scene2TL.to(".eye2",{
