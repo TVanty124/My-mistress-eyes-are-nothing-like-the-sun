@@ -284,6 +284,7 @@ body{
     padding-bottom:50vh;
     view-timeline-name:--scene;
     view-timeline-axis:block;
+    background:#963628
 }
 
 .scene1-sticky{
@@ -393,7 +394,7 @@ body{
     gap:18px;
     font-family:"Have Heart One";
     font-size:90px;
-    color:#4B1B14;
+    color:#ffffff;
 }
 
 .poem1{
@@ -1174,7 +1175,7 @@ body{
 
     overflow:hidden;
 
-    background:#F3F1EE;
+    background:#963628;
 
 }
 
@@ -1281,7 +1282,7 @@ body{
 
     line-height:1.05;
 
-    color:#4B1B14;
+    color:#ffffff;
 
 }
 
@@ -1319,7 +1320,7 @@ body{
 
     overflow:hidden;
 
-    background:#F3F1EE;
+    background:#963628;
 
 }
 
@@ -1508,7 +1509,7 @@ body{
 
     font-size:90px;
 
-    color:#4B1B14;
+    color:#ffffff;
 
     white-space:nowrap;
 
@@ -1603,7 +1604,7 @@ body{
 
     overflow:hidden;
 
-    background:#F3F1EE;
+    background:#963628;
 
 }
 
@@ -1656,7 +1657,7 @@ body{
 
     font-size:90px;
 
-    color:#4B1B14;
+    color:#ffffff;
 
     pointer-events:none;
 
@@ -1760,7 +1761,7 @@ body{
 
     height:3300px;
 
-    background:#F3F1EE;
+    background:#963628;
 
     overflow:hidden;
 
@@ -1877,7 +1878,7 @@ body{
 
     line-height:1;
 
-    color:#4B1B14;
+    color:#ffffff;
 
     opacity:0;
 
@@ -1936,7 +1937,7 @@ body{
     display:block;
     font-family:"Have Heart One";
     font-size:250px;
-    color:#4B1B14;
+    color:#ffffff;
     text-align:center;
     line-height:.75;
     margin-top:2850px;
