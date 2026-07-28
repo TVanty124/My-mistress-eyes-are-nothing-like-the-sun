@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Tutorial Week 3 - CSS Animation & Transition</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3/dist/ScrollTrigger.min.js"></script>
+  
+    <link rel="stylesheet"
+        href="https://db.onlinewebfonts.com/c/9a636e0bdd69317311ddf1a09a1d8918?family=Have+Heart+One">
+
+</head>
+
+<body>
+    <img src="Image/mouse.png"class="mouse"alt="Mouse">
+
+    <!-- LANDING PAGE -->
+
+    <input type="checkbox" id="reveal" hidden>
+
+    <section class="landing">
+
+        <label for="reveal" class="Text">
+
+            <p class="my-mistress-eyes-are">
+
+                <span>My mistress' eyes</span>
+                <span>are nothing like the sun</span>
+
+            </p>
+
+        </label>
+
+    </section>
+
+    <img class="Khung1"
+        src="Image/Khung1.png"
+        alt="Left Frame">
+
+    <img class="Khung2"
+        src="Image/Khung2.png"
+        alt="Right Frame">
+
+    <img class="Khung3"
+        src="Image/Khung3.png"
+        alt="Left Frame">
+
+    <img class="Khung4"
+        src="Image/Khung4.png"
+        alt="Right Frame">
+
+    <img class="Hoa1"
+        src="Image/Hoa1.png"
+        alt="Left Flower">
+
+    <img class="Hoa2"
+        src="Image/Hoa2.png"
+        alt="Right Flower">
+
+    <img class="Hoa3"
+        src="Image/Hoa3.png"
+        alt="Left Flower">
+
+    <img class="Hoa4"
+        src="Image/Hoa4.png"
+        alt="Right Flower">
+
+    <div class="content">
+
+        <section class="background">
+
+            <div class="Title-container">
+
+                <img class="Title image1"
+                    src="Image/title.png"
+                    alt="Title Image 1">
+
+                <img class="Title image2"
+                    src="Image/Title2.png"
+                    alt="Title Image 2">
+
+            </div>
+        </section>
+
+<!-- SCENE 1 -->
+
+        <section class="scene1">
+
+            <div class="scene1-sticky">
+
+                <!-- GIRL -->
+
+                <img src="Image/girl.png"
+                    class="girl"
+                    alt="girl">
+
+                <!-- PHOTO -->
+
+                <div class="photo">
+
+                    <img src="Image/Hand.png"
+                        class="hand"
+                        alt="">
+
+                    <img src="Image/Eye.png"
+                        class="eye"
+                        alt="">
+
+                    <img src="Image/numb.png"
+                        class="numb"
+                        alt="">
+
+                </div>
+
+                <!-- POEM -->
+
+                <div class="poem1">
+
+                    <span>My</span>
+                    <span>mistress'</span>
+                    <span>eyes</span>
+
+                </div>
+
+                <div class="poem15">
+
+                    <span>are</span>
+                    <span>nothing</span>
+                    <span>like</span>
+                    <span>the</span>
+                    <span>sun</span>
+
+                </div>
+
+            </div>
+
+        </section>
+
+<!--SCENE 2-->
+
+<section class="scene2">
+
+    <img src="Image/beach.png"class="beach"alt="Beach">
+
+    <img src="Image/main coral.png"class="main-coral"alt="Main Coral">
+
+    <img src="Image/coral.png"class="coral"alt="Coral">
+
+    <img src="Image/Eye.png"class="eye2"alt="Eye">
+
+<!-- POEM -->
+
+    <div class="poem2">
+
+        <span>Coral</span>
+
+    </div>
+
+    <div class="poem25">
+
+        <span>is</span>
+        <span>far</span>
+        <span>more</span>
+        <span>red</span>
+
+    </div>
+
+    <div class="poem26">
+
+        <span>than</span>
+        <span>her</span>
+        <span>lips'</span>
+        <span>red</span>
+
+    </div>
+
+</section>
+
+<!-- SCENE 3 -->
+
+<section class="scene3">
+
+<img src="Image/snow bg.png"class="snowbg"alt="Snowbg">
+
+<div class="snow-container"></div>
+<!-- POEM 3-->
+<div class="poem3">
+
+    <p>If snow be white,</p>
+
+    <p class="poem35">
+        why then her breasts are dun;
+    </p>
+
+</div>
+    
+</section>
+
+<!-- SCENE 4 -->
+
+<section class="scene4">
+
+    <div class="MainScene4">
+
+        <img class="mirror1" src="Image/mirror1.png">
+        <img class="mirror2" src="Image/mirror2.png">
+
+        <img class="doodle1" src="Image/doodle1.png">
+        <img class="doodle2" src="Image/doddle2.png">
+
+    </div>
+
+<!-- POEM 3-->
+
+<div class="poem40">
+
+    <p class="poem4">
+        If hairs be wires,
+    </p>
+
+    <p class="poem45">
+        black wires grow on her head.
+    </p>
+
+</div>
+</section>
+
+
+<!-- SCENE 5 -->
+
+<section class="scene5">
+
+    <img src="Image/bouquet.png" class="bouquet" alt="Bouquet">
+
+    <img src="Image/flower.png" class="flower" alt="Flower">
+
+    <img src="Image/girl2.png" class="girl2" alt="Girl">
+
+    <!-- POEM 5 -->
+
+    <div class="poem5">
+
+    <p class="intro">
+    I have seen
+    </p>
+
+    <p class="chaos roses">
+    roses damasked,
+    </p>
+
+    <p class="chaos red">
+    red
+    </p>
+
+    <p class="chaos white">
+    and white
+    </p>
+
+</div>
+    <p class="poem55">
+    But no such roses see I in her cheeks;
+    </p>
+
+</section>
+
+<!--  SCENE 6 -->
+<section class="scene6">
+
+    <!-- Perfume -->
+
+    <div class="perfume">
+
+        <img
+            src="Image/perfume.png"
+            class="perfumeBottle"
+            alt="Perfume">
+
+        <div class="spray"></div>
+
+    </div>
+
+
+    <!-- POEM 6 -->
+
+    <div class="perfumeText">
+
+        <p class="text1">
+
+            And in some perfumes is there
+            <br>
+            more delight.
+
+        </p>
+
+        <p class="text2">
+
+            Than in the breath
+            <br>
+            that from my mistress reeks.
+
+        </p>
+
+    </div>
+
+</section>
+
+<!-- SCENE 7 -->
+
+<section class="scene7">
+
+    <div class="gramophone">
+
+    <img src="Image/vali.png"class="case"alt="Case">
+
+    <img src="Image/record.png"class="record"alt="Record">
+
+    <img src="Image/tonearm.png"class="tonearm"alt="Tone Arm">
+
+    </div>
+
+    <div class="notes">
+
+    <img src="Image/note1.png"class="note1"alt="Note">
+
+    <img src="Image/note2.png"class="note2"alt="Note">
+
+    <img src="Image/note3.png"class="note3"alt="Note">
+
+    </div>
+
+    <div class="girlWrap">
+
+        <img src="Image/box.png"class="speechBox"alt="Speech Box">
+
+        <img src="Image/girl.png"class="scene7Girl"alt="Girl">
+
+    </div>
+
+    <!-- POEM -->
+
+    <div class="poem7">
+
+        <p class="line1">
+
+            <span>I</span>
+            <span>love</span>
+            <span>to</span>
+            <span>hear</span>
+            <span>her</span>
+            <span>speak,</span>
+
+        </p>
+
+        <p class="line1-2">
+
+            <span>yet</span>
+            <span>well</span>
+            <span>I</span>
+            <span>know</span>
+
+        </p>
+
+
+        <p class="line2">
+
+            <span>That</span>
+            <span>music</span>
+            <span>hath</span>
+            <span>a</span>
+            <span>far</span>
+
+        </p>
+
+        <p class="line2-2">
+
+            <span>more</span>
+            <span>pleasing</span>
+            <span>sound.</span>
+
+        </p>
+
+    </div>
+
+</section>
+
+<!-- SCENE 8 -->
+
+<section class="scene8">
+
+    <div class="footer1">
+
+        <img src="Image/footer1.png"alt="Left Foot">
+
+        <p class="footText">
+
+            I grant
+
+        </p>
+
+    </div>
+
+    <div class="footer2">
+
+        <img src="Image/footer2.png"alt="Right Foot">
+
+        <p class="footText">
+
+            I never saw
+
+        </p>
+
+    </div>
+
+    <div class="footer3">
+
+        <img src="Image/footer1.png"alt="Left Foot">
+
+        <p class="footText">
+
+            a goddess go
+
+        </p>
+
+    </div>
+
+    <div class="footer4">
+
+        <img src="Image/footer2.png"alt="Right Foot">
+
+        <p class="footText">
+
+            My mistress,
+
+        </p>
+
+    </div>
+
+    <div class="footer5">
+
+        <img src="Image/footer1.png"alt="Left Foot">
+
+        <p class="footText">
+
+            when she walks,
+
+        </p>
+
+    </div>
+
+    <div class="footer6">
+
+        <img src="Image/footer2.png"alt="Right Foot">
+
+        <p class="footText">
+
+            treads on the ground.
+
+        </p>
+
+    </div>
+
+</section>
+
+<!-- SCENE 9 -->
+
+<section class="scene9">
+
+    <img src="Image/dance1.png" class="dance1" alt="Dance">
+
+
+    <img src="Image/footer1.png" class="foot1" alt="Left Foot">
+    <img src="Image/footer2.png" class="foot2" alt="Right Foot">
+    <img src="Image/footer1.png" class="foot3" alt="Left Foot">
+    <img src="Image/footer2.png" class="foot4" alt="Right Foot">
+    <img src="Image/footer1.png" class="foot5" alt="Left Foot">
+    <img src="Image/footer2.png" class="foot6" alt="Right Foot">
+
+    <img src="Image/dance2.png" class="dance2" alt="Dance">
+
+    <p class="poem9">
+        And yet,
+    </p>
+
+    <img src="Image/footer1.png" class="foot7" alt="Left Foot">
+    <img src="Image/footer2.png" class="foot8" alt="Right Foot">
+    <img src="Image/footer1.png" class="foot9" alt="Left Foot">
+    <img src="Image/footer2.png" class="foot10" alt="Right Foot">
+    <img src="Image/footer1.png" class="foot11" alt="Left Foot">
+    <img src="Image/footer2.png" class="foot12" alt="Right Foot">
+
+    <img src="Image/dance3.png" class="dance3" alt="Dance">
+
+    <p class="poem91">
+        by heaven,
+    </p>
+
+    <img src="Image/footer1.png" class="foot13" alt="Left Foot">
+    <img src="Image/footer2.png" class="foot14" alt="Right Foot">
+    <img src="Image/footer1.png" class="foot15" alt="Left Foot">
+    <img src="Image/footer2.png" class="foot16" alt="Right Foot">
+    <img src="Image/footer1.png" class="foot17" alt="Left Foot">
+    <img src="Image/footer2.png" class="foot18" alt="Right Foot">
+
+    <img src="Image/dance4.png" class="dance4" alt="Dance">
+
+    <p class="poem92">
+        I think my love as rare
+    </p>
+
+    <img src="Image/footer1.png" class="foot19" alt="Left Foot">
+    <img src="Image/footer2.png" class="foot20" alt="Right Foot">
+    <img src="Image/footer1.png" class="foot21" alt="Left Foot">
+    <img src="Image/footer2.png" class="foot22" alt="Right Foot">
+    <img src="Image/footer1.png" class="foot23" alt="Left Foot">
+    <img src="Image/footer2.png" class="foot24" alt="Right Foot">
+
+    <img src="Image/dance5.png" class="dance5" alt="Dance">
+
+    <p class="poem93">
+        As any she belied with false compare.
+    </p>
+
+    <p class="end">
+       The End
+    </p>
+
+</section>
+</section>
+
+
+<script src="script.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,1943 @@
+@font-face{
+    font-family:"Have Heart One";
+    src:url("./fonts/have-heart-one.otf") format("opentype");
+}
+
+/* GLOBAL */
+
+body{
+    margin:0;
+    overflow-x:hidden;
+    background:#F3F1EE;
+    * {
+    cursor: none !important;
+}
+}
+.mouse {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 400px;
+    pointer-events: none;
+    z-index: 99999;
+    transform: translate(-50%, -50%);
+}
+/* BACKGROUND SECTION */
+
+.background{
+    min-height:40vh;
+    padding-bottom:100vh;
+}
+
+/* LANDING PAGE */
+
+.landing{
+    position:sticky;
+    top:0;
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:flex-start;
+    z-index:1;
+}
+
+/* TEXT */
+
+.Text{
+    display:block;
+    cursor:pointer;
+}
+
+.my-mistress-eyes-are{
+    position:relative;
+    margin-top:100px;
+    transition:1s;
+    transform-origin:center top;
+}
+
+.my-mistress-eyes-are span{
+    display:block;
+    font-family:"Have Heart One";
+    font-size:250px;
+    color:#4B1B14;
+    text-align:center;
+    line-height:.75;
+    margin-top:50px;
+}
+
+/* CONTENT */
+
+.content{
+    transition:1s;
+    filter:blur(10px);
+    opacity:1;
+    pointer-events:none;
+    overflow:hidden;
+    height:100vh;
+}
+
+/* CLICK EFFECT */
+
+#reveal:checked ~ .landing .my-mistress-eyes-are{
+    transform:scale(.45);
+}
+
+#reveal:checked ~ .content .Title-container{
+    opacity:1;
+    filter:blur(0);
+}
+
+#reveal:checked ~ .content{
+    filter:blur(0);
+    opacity:1;
+    pointer-events:auto;
+    overflow:visible;
+}
+
+/* TITLE CONTAINER */
+
+.Title-container{
+    position:sticky;
+    top:350px;
+    width:400px;
+    margin:0 auto;
+}
+
+/* TITLE IMAGE */
+
+.Title{
+    position:absolute;
+    top:0;
+    left:0;
+    width:400px;
+    height:auto;
+    object-fit:contain;
+    will-change:opacity;
+    backface-visibility:hidden;
+}
+
+/* FRAME */
+
+.Khung1{
+    position:fixed;
+    top:10px;
+    left:10px;
+    width:200px;
+}
+
+.Khung2{
+    position:fixed;
+    top:10px;
+    right:10px;
+    width:200px;
+}
+
+.Khung3{
+    position:fixed;
+    bottom:10px;
+    left:10px;
+    width:200px;
+}
+
+.Khung4{
+    position:fixed;
+    bottom:10px;
+    right:10px;
+    width:200px;
+}
+
+.Khung1,
+.Khung2,
+.Khung3,
+.Khung4{
+
+    position:fixed;
+
+    z-index:1000;
+
+    pointer-events:none;
+
+}
+
+
+/* FLOWER */
+
+.Hoa1{
+    position:fixed;
+    top:0;
+    left:10px;
+    width:200px;
+}
+
+.Hoa2{
+    position:fixed;
+    top:0;
+    right:0;
+    width:180px;
+}
+
+.Hoa3{
+    position:fixed;
+    bottom:-5px;
+    left:7px;
+    width:160px;
+}
+
+.Hoa4{
+    position:fixed;
+    bottom:5px;
+    right:7px;
+    width:180px;
+}
+.Hoa1,
+.Hoa2,
+.Hoa3,
+.Hoa4{
+
+    position:fixed;
+
+    z-index:1001;
+
+    pointer-events:none;
+
+    transform-origin:center bottom;
+
+    animation:sway 3.5s ease-in-out infinite;
+
+}
+
+/* FLOWER ANIMATION */
+
+.Hoa1,
+.Hoa2,
+.Hoa3,
+.Hoa4{
+    transform-origin:center bottom;
+    animation:sway 3.5s ease-in-out infinite;
+}
+
+@keyframes sway{
+
+    0%{
+        transform:rotate(-7deg) translateY(0);
+    }
+
+    25%{
+        transform:rotate(-2deg) translateY(-2px);
+    }
+
+    50%{
+        transform:rotate(7deg) translateY(0);
+    }
+
+    75%{
+        transform:rotate(2deg) translateY(-2px);
+    }
+
+    100%{
+        transform:rotate(-7deg) translateY(0);
+    }
+
+}
+
+/* TITLE ANIMATION */
+
+.image1{
+    animation:Titleimage1 2s linear infinite both;
+}
+
+.image2{
+    animation:Titleimage2 2s linear infinite both;
+}
+
+/* KEYFRAMES */
+
+@keyframes Titleimage1{
+
+    0%,50%{
+        opacity:1;
+    }
+
+    50.1%,100%{
+        opacity:0;
+    }
+
+}
+
+@keyframes Titleimage2{
+
+    0%,50%{
+        opacity:0;
+    }
+
+    50.1%,100%{
+        opacity:1;
+    }
+
+}
+
+/* SCENE 1 */
+
+.scene1{
+    position:relative;
+    min-height:450vh;
+    padding-bottom:50vh;
+    view-timeline-name:--scene;
+    view-timeline-axis:block;
+}
+
+.scene1-sticky{
+    position:sticky;
+    top:15vh;
+    height:85vh;
+}
+
+/* GIRL */
+
+.girl{
+    position:absolute;
+    left:35%;
+    bottom:200px;
+    width:420px;
+    transform:translateX(-50%);
+    z-index:1;
+}
+
+/* PHOTO */
+
+.photo{
+    position:absolute;
+    left:58%;
+    bottom:120px;
+    width:520px;
+    height:700px;
+    transform-origin:30% 140%;
+    animation:photoSwipe linear both;
+    animation-timeline:--scene;
+    animation-range:entry 55% cover 75%;
+    z-index:3;
+    transform:
+        translateX(-60%)
+        rotate(-18deg);
+}
+
+/* EYE */
+
+.eye{
+    position:absolute;
+    width:800px;
+    left:100%;
+    bottom:50px;
+    transform:
+        translateX(-60%)
+        rotate(-18deg);
+    z-index:4;
+}
+
+/* HAND */
+
+.hand{
+    position:absolute;
+    width:520px;
+    left:30%;
+    bottom:0;
+    transform:
+        translateX(-60%)
+        rotate(-18deg);
+    z-index:3;
+}
+
+/* NUMB */
+
+.numb{
+    position:absolute;
+    width:520px;
+    left:30%;
+    bottom:0;
+    transform:
+        translateX(-60%)
+        rotate(-18deg);
+    z-index:5;
+}
+
+/* PHOTO ANIMATION */
+
+@keyframes photoSwipe{
+
+    0%,30%{
+        transform:
+            translateX(-60%)
+            rotate(-18deg);
+    }
+
+    65%{
+        transform:
+            translateX(-15%)
+            rotate(-8deg);
+    }
+
+    100%{
+        transform:
+            translateX(18%)
+            rotate(-5deg);
+    }
+
+}
+
+/* POEM 1 */
+
+.poem1,
+.poem15{
+    position:absolute;
+    display:flex;
+    gap:18px;
+    font-family:"Have Heart One";
+    font-size:90px;
+    color:#4B1B14;
+}
+
+.poem1{
+    left:50%;
+    top:20%;
+}
+
+.poem15{
+    left:41%;
+    top:40%;
+}
+
+.poem1 span:nth-child(1){
+    animation:oldOut linear both;
+    animation-timeline:--scene;
+    animation-range:entry 62% cover 64%;
+}
+
+.poem1 span:nth-child(2){
+    animation:oldOut linear both;
+    animation-timeline:--scene;
+    animation-range:entry 64% cover 66%;
+}
+
+.poem1 span:nth-child(3){
+    animation:oldOut linear both;
+    animation-timeline:--scene;
+    animation-range:entry 66% cover 68%;
+}
+
+.poem15 span{
+    opacity:0;
+}
+
+.poem15 span:nth-child(1){
+    animation:newIn linear both;
+    animation-timeline:--scene;
+    animation-range:entry 90% cover 65%;
+}
+
+.poem15 span:nth-child(2){
+    animation:newIn linear both;
+    animation-timeline:--scene;
+    animation-range:entry 65% cover 67%;
+}
+
+.poem15 span:nth-child(3){
+    animation:newIn linear both;
+    animation-timeline:--scene;
+    animation-range:entry 67% cover 69%;
+}
+
+.poem15 span:nth-child(4){
+    animation:newIn linear both;
+    animation-timeline:--scene;
+    animation-range:entry 69% cover 71%;
+}
+
+.poem15 span:nth-child(5){
+    animation:newIn linear both;
+    animation-timeline:--scene;
+    animation-range:entry 71% cover 73%;
+}
+
+/* OLD OUT */
+
+@keyframes oldOut{
+
+    to{
+        opacity:0;
+        transform:translateY(-15px);
+    }
+
+}
+
+/* NEW IN */
+
+@keyframes newIn{
+
+    0%{
+        opacity:0;
+        filter:blur(8px);
+        transform:translateY(20px);
+    }
+
+    20%{
+        opacity:0.03;
+        filter:blur(7px);
+    }
+
+    40%{
+        opacity:0.08;
+        filter:blur(6px);
+    }
+
+    60%{
+        opacity:0.2;
+        filter:blur(4px);
+    }
+
+    80%{
+        opacity:0.5;
+        filter:blur(2px);
+    }
+
+    100%{
+        opacity:1;
+        filter:blur(0);
+        transform:translateY(0);
+    }
+
+}
+
+/* SCENE 2 */
+
+.scene2{
+
+    position:relative;
+
+    height:450vh;
+
+    overflow:hidden;
+
+}
+
+/*BEACH*/
+
+.beach{
+
+    position:absolute;
+
+    inset:0;
+
+    width:100%;
+
+    height:100%;
+
+    object-fit:cover;
+
+    z-index:1;
+
+}
+
+/* MAIN CORAL */
+
+.main-coral{
+
+    position:absolute;
+
+    left:85%;
+
+    bottom:450px;
+
+    width:460px;
+
+    transform:translateX(-50%);
+
+    z-index:2;
+
+}
+
+/* CORAL*/
+
+.coral{
+
+    position:absolute;
+
+    left:85%;
+
+    bottom:450px;
+
+    width:460px;
+
+    transform:translateX(-50%);
+
+    z-index:9;
+
+}
+
+/* EYE */
+
+.eye2{
+
+    position:absolute;
+
+    left:72%;
+
+    top:18%;
+
+    width:800px;
+
+    transform:
+        translate(-50%,-50%)
+        rotate(-18deg);
+
+    opacity:1;
+
+    z-index:8;
+
+    pointer-events:none;
+
+    will-change:transform;
+
+}
+/*POEM*/
+
+.poem2,
+.poem25,
+.poem26{
+
+    position:absolute;
+
+    display:flex;
+
+    gap:18px;
+
+    font-family:"Have Heart One";
+
+    font-size:90px;
+
+    color:#4B1B14;
+
+    z-index:99;
+
+    pointer-events:none;
+
+}
+
+.poem2{
+
+    top:30%;
+
+    right:50%;
+
+}
+
+.poem25{
+
+    top:48%;
+
+    left:18%;
+
+}
+
+.poem26{
+
+    top:85%;
+
+    left:50%;
+
+}
+
+.poem2 span,
+.poem25 span,
+.poem26 span{
+
+    opacity:0;
+
+}
+
+/* SCENE 3 */
+
+.scene3{
+    position:relative;
+    overflow:hidden;
+    height:200vh;
+}
+
+.snow-container{
+    position:absolute;
+    inset:0;
+    overflow:hidden;
+    pointer-events:none;
+    z-index:999;
+}
+
+.snow{
+    position:absolute;
+    top:-180px;
+    will-change:transform;
+}
+@keyframes fall{
+
+    0%{
+        transform:translate3d(0,-150px,0) rotate(0deg);
+    }
+
+    30%{
+        transform:translate3d(-6px,35vh,0) rotate(8deg);
+    }
+
+    60%{
+        transform:translate3d(5px,70vh,0) rotate(15deg);
+    }
+
+    100%{
+        transform:translate3d(2px,120vh,0) rotate(20deg);
+    }
+
+}
+.snowbg{
+
+    position:absolute;
+
+    inset:0;
+
+    width:100%;
+
+    height:100%;
+
+    object-fit:cover;
+
+    z-index:1;
+
+}
+
+/* POEM */
+.poem3{
+
+    position:absolute;
+
+    display:flex;
+    
+    top:25%;
+
+    left:35%;
+
+    flex-direction:column;
+
+    gap:10px;
+
+    font-family:"Have Heart One";
+
+    font-size:90px;
+
+    color:#4B1B14;
+
+    z-index:99;
+
+}
+
+.poem3 p{
+
+    margin:0;
+
+}
+
+
+.poem35{
+
+    opacity:0;
+
+    transform:translateY(20px);
+
+    transition:0.6s ease;
+
+}
+
+
+.poem3:hover .poem35{
+
+    opacity:1;
+
+    transform:translateY(0);
+
+}
+
+/* SCENE 4*/
+
+
+.MainScene4{
+
+    position:relative;
+
+    width:100%;
+
+    height:100%;
+
+}
+
+.mirror1,
+.mirror2{
+
+    position:absolute;
+
+    top:40%;
+
+    left:50%;
+
+    width:500px;
+
+    height:auto;
+
+    transform:translate(-50%,-50%);
+
+    z-index:2;
+
+}
+
+.mirror1{
+    animation:mirror1 2s linear infinite;
+}
+
+.mirror2{
+    opacity:0;
+    animation:mirror2 2s linear infinite;
+}
+
+/* MIRROR ANIMATION */
+
+@keyframes mirror1{
+
+    0%,50%{
+        opacity:1;
+    }
+
+    50.1%,100%{
+        opacity:0;
+    }
+
+}
+
+@keyframes mirror2{
+
+    0%,50%{
+        opacity:0;
+    }
+
+    50.1%,100%{
+        opacity:1;
+    }
+
+}
+
+/* DOODLE ANIMATION */
+
+.doodle1,
+.doodle2{
+
+    position:absolute;
+
+    top:40%;
+
+    left:50%;
+
+    width:550px;
+
+    height:auto;
+
+    transform:translate(-50%,-50%);
+
+    z-index:2;
+
+}
+
+.doodle1{
+    animation:mirror1 2s linear infinite;
+}
+
+.doodle2{
+    opacity:0;
+    animation:mirror2 2s linear infinite;
+}
+
+/* MIRROR ANIMATION */
+
+@keyframes doodle1{
+
+    0%,50%{
+        opacity:1;
+    }
+
+    50.1%,100%{
+        opacity:0;
+    }
+
+}
+
+@keyframes doodle2{
+
+    0%,50%{
+        opacity:0;
+    }
+
+    50.1%,100%{
+        opacity:1;
+    }
+
+}
+
+/*  SCENE4.2 */
+
+
+.scene4{
+
+    position:relative;
+
+    width:100%;
+
+    height:260vh;
+
+    overflow:hidden;
+
+    background:#000000;
+
+    transition:background-color .8s ease;
+
+}
+
+.scene4.changed{
+
+    background:#F3F1EE;
+
+}
+
+/* POEM */
+.poem40{
+
+    position:absolute;
+
+    top:25%;
+
+    left:57%;
+
+    transform:translateX(-50%);
+
+    width:900px;
+
+    height:140px;
+
+    overflow:hidden;
+
+    font-family:"Have Heart One";
+
+    font-size:90px;
+
+    color:#FCDEA0;
+
+}
+
+.scene4.changed .poem40{
+
+    color:#4B1B14;
+
+}
+
+.poem40 p{
+
+    position:absolute;
+
+    width:100%;
+
+    margin:0;
+
+    transition:0.8s ease;
+
+}
+
+
+.poem4{
+
+    transform:translateY(0);
+
+    opacity:1;
+
+}
+
+
+.poem45{
+
+    transform:translateY(-120px);
+
+    opacity:0;
+
+}
+
+
+.poem40.changed .poem4{
+
+    transform:translateY(120px);
+
+    opacity:0;
+
+}
+
+.poem40.changed .poem45{
+
+    transform:translateY(0);
+
+    opacity:1;
+
+}
+
+/* SCENE 5 */
+
+.scene5{
+
+    position:relative;
+
+    width:100%;
+
+    height:300vh;
+
+    overflow:hidden;
+
+    background:#F3F1EE;
+
+}
+
+.bouquet{
+
+    position:absolute;
+
+    top:8%;
+
+    left:10%;
+
+    width:320px;
+
+    z-index:2;
+
+}
+
+
+.flower{
+
+    position:absolute;
+
+    top:8%;
+
+    left:21%;
+
+    width:155px;
+
+    z-index:5;
+
+    transform-origin:center;
+
+}
+
+.girl2{
+
+    position:absolute;
+
+    right:12%;
+
+    bottom:300px;
+
+    width:420px;
+
+}
+
+/* POEM 5 */
+
+.poem5{
+
+    position:absolute;
+
+    top:15%;
+
+    left:50%;
+
+    transform:translateX(-50%);
+
+    display:flex;
+
+    flex-direction:column;
+
+    align-items:center;
+
+    gap:10px;
+
+    font-family:"Have Heart One";
+
+    font-size:90px;
+
+    color:#4B1B14;
+
+}
+
+.poem5 p{
+
+    margin:0;
+    position:relative;
+
+
+}
+
+.chaos span{
+
+    display:inline-block;
+
+    will-change:transform;
+
+    transition:
+
+        transform .45s ease,
+
+        opacity .45s ease;
+
+}
+
+.chaos{
+
+    cursor:pointer;
+
+}
+
+.intro{
+
+    left:90px;
+
+    top:-70px;
+
+}
+
+.roses{
+
+    left:550px;
+
+    top:200px;
+
+    color:#C76A7A;
+
+}
+
+.red{
+
+    left:-550px;
+
+    top:400px;
+
+    color:#963628; 
+
+}
+
+.white{
+
+    left:550px;
+
+    top:1000px;
+
+    color:#ffffff; 
+
+}
+
+.poem55{
+
+    position:absolute;
+
+    top:80%;
+
+    left:40%;
+
+    transform:translateX(-50%);
+
+    font-family:"Have Heart One";
+
+    font-size:90px;
+
+    color:#4B1B14;
+
+    opacity:0;
+
+    filter:blur(12px);
+
+}
+
+/* SCENE 6 */
+
+.scene6{
+
+    position:relative;
+
+    width:100%;
+
+    height:100vh;
+
+    overflow:hidden;
+
+    background:#F3F1EE;
+
+}
+
+/*PERFUME*/
+
+.perfume{
+
+    position:absolute;
+
+    right:8%;
+
+    bottom:20%;
+
+    width:400px;
+
+    z-index:30;
+
+}
+
+.perfumeBottle{
+
+    width:100%;
+
+    display:block;
+
+    cursor:pointer;
+
+    transform-origin:80% 88%;
+
+}
+
+/*SPRAY*/
+
+.spray{
+
+    position:absolute;
+
+    left:35px;
+    top:55px;
+
+    width:1px;
+    height:1px;
+
+    overflow:visible;
+
+    pointer-events:none;
+
+    z-index:50;
+
+}
+
+/*DROP*/
+
+.drop{
+
+    position:absolute;
+
+    left:0;
+    top: 70px;;
+
+    width:10px;
+    height:10px;
+
+    border-radius:50%;
+
+    background:#e8b1e2;
+
+    opacity:1;
+
+    filter:none;
+
+    box-shadow:
+        0 0 6px rgba(255,255,255,.9);
+
+}
+
+/*TEXT*/
+
+.perfumeText{
+
+    position:absolute;
+
+    left:20%;
+
+    top:30%;
+
+    width:900px;
+
+    z-index:60;
+
+}
+
+.perfumeText p{
+
+    position:absolute;
+
+    margin:0;
+
+    width:100%;
+
+    font-family:"Have Heart One";
+
+    font-size:90px;
+
+    line-height:1.05;
+
+    color:#4B1B14;
+
+}
+
+.text1{
+
+    opacity:1;
+
+}
+
+.text2{
+
+    opacity:0;
+
+}
+
+.perfumeBottle,
+.drop,
+.text1,
+.text2{
+    will-change:
+    transform,
+    opacity,
+    filter;
+}
+
+/* SCENE 7 */
+
+.scene7{
+
+    position:relative;
+
+    width:100%;
+
+    height:100vh;
+
+    overflow:hidden;
+
+    background:#F3F1EE;
+
+}
+
+.gramophone{
+
+    position:absolute;
+
+    left:5%;
+
+    bottom:8%;
+
+    width:520px;
+
+    z-index:5;
+
+}
+
+.case{
+
+    width:100%;
+
+    display:block;
+
+}
+
+.record{
+
+    position:absolute;
+
+    width:200px;
+
+    left:140px;
+
+    bottom:100px;
+
+    z-index:2;
+
+    transform-origin:center center;
+
+}
+
+.tonearm{
+
+    position:absolute;
+
+    width:715px;
+
+    left:-100px;
+
+    bottom:-130px;
+
+    z-index:50;
+
+    transform-origin:18% 10%;
+
+}
+
+.notes{
+
+    position:absolute;
+
+    left:-70px;
+
+    bottom:980px;
+
+
+    height:220px;
+
+    pointer-events:none;
+
+    z-index:46;
+
+}
+
+.note1,
+.note2,
+.note3{
+
+    position:absolute;
+
+    width:1000px;
+
+    display:block;
+
+}
+
+.note1{
+
+    left:0;
+
+    top:90px;
+
+}
+
+.note2{
+
+    left:80px;
+
+    top:10px;
+
+}
+
+.note3{
+
+    left:200px;
+
+    top:-40px;
+
+}
+
+
+.girlWrap{
+
+    position:absolute;
+
+    right:0;
+
+    bottom:0;
+
+    width:700px;
+
+    height:650px;
+
+    z-index:40;
+
+}
+
+.speechBox{
+
+    position:absolute;
+
+    left:350px;
+
+    top:40px;
+
+    width:400px;
+
+    z-index:41;
+
+}
+
+.scene7Girl{
+
+    position:absolute;
+
+    left:500px;
+
+    bottom:0;
+
+    width:500px;
+
+    z-index:42;
+
+}
+
+/* POEM */
+
+.poem7{
+
+    position:absolute;
+
+    left:38%;
+
+    top:28%;
+
+    width:650px;
+
+    height:250px;
+
+    z-index:30;
+
+}
+
+.line1,
+.line1-2,
+.line2,
+.line2-2{
+
+    position:absolute;
+
+    margin:0;
+
+    width:100%;
+
+    font-family:"Have Heart One";
+
+    font-size:90px;
+
+    color:#4B1B14;
+
+    white-space:nowrap;
+
+}
+
+.line1,
+.line1-2,
+.line2,
+.line2-2{
+
+    transition:opacity .25s ease;
+
+}
+
+.line1{
+
+    top:0;
+
+    opacity:1;
+
+    visibility:visible;
+
+}
+
+.line1-2{
+
+    top:90px;
+
+    opacity:1;
+
+    visibility:visible;
+
+}
+
+.line2{
+
+    top:0;
+
+    opacity:0;
+
+    visibility:hidden;
+
+}
+
+.line2-2{
+
+    top:90px;
+
+    opacity:0;
+
+    visibility:hidden;
+
+}
+.line1 span,
+.line1-2 span,
+.line2 span,
+.line2-2 span{
+
+    display:inline-block;
+
+    margin-right:8px;
+
+    transform-origin:center;
+
+}
+
+.record,
+.tonearm,
+.note1,
+.note2,
+.note3,
+.scene7Girl,
+.speechBox,
+.line1 span,
+.line1-2 span,
+.line2 span,
+.line2-2 span{
+
+    will-change:transform,opacity;
+
+}
+
+/* SCENE 8 */
+
+.scene8{
+
+    position:relative;
+
+    width:100%;
+
+    height:130vh;
+
+    overflow:hidden;
+
+    background:#F3F1EE;
+
+}
+
+.footer1,
+.footer2,
+.footer3,
+.footer4,
+.footer5,
+.footer6{
+
+    position:absolute;
+
+    cursor:pointer;
+
+}
+
+.footer1 img,
+.footer2 img,
+.footer3 img,
+.footer4 img,
+.footer5 img,
+.footer6 img{
+
+    width:300px;
+
+    display:block;
+
+    transition:.35s;
+
+}
+
+.footText{
+
+    position:absolute;
+
+    left:50%;
+
+    bottom:105%;
+
+    transform:
+        translateX(-50%)
+        translateY(25px)
+        scale(.75);
+
+    opacity:0;
+
+    white-space:nowrap;
+
+    font-family:"Have Heart One";
+
+    font-size:90px;
+
+    color:#4B1B14;
+
+    pointer-events:none;
+
+    transition:
+        transform .45s cubic-bezier(.22,1,.36,1),
+        opacity .35s;
+
+}
+
+.footer1:hover img,
+.footer2:hover img,
+.footer3:hover img,
+.footer4:hover img,
+.footer5:hover img,
+.footer6:hover img{
+
+    transform:scale(1);
+
+}
+
+
+.footer1:hover .footText,
+.footer2:hover .footText,
+.footer3:hover .footText,
+.footer4:hover .footText,
+.footer5:hover .footText,
+.footer6:hover .footText{
+
+    opacity:1;
+
+    transform:
+        translateX(-50%)
+        translateY(0)
+        scale(1.5);
+
+}
+
+.footer1{
+
+    left:2%;
+
+    top:40%;
+
+    transform:rotate(10deg);
+
+}
+
+.footer2{
+
+    left:12%;
+
+    top:68%;
+
+    transform:rotate(-5deg);
+
+}
+
+.footer3{
+
+    left:27%;
+
+    top:40%;
+
+    transform:rotate(13deg);
+
+}
+
+.footer4{
+
+    left:37%;
+
+    top:70%;
+
+    transform:rotate(-20deg);
+
+}
+
+.footer5{
+
+    left:57%;
+
+    top:48%;
+
+}
+
+.footer6{
+
+    left:72%;
+
+    top:70%;
+
+}
+
+/* SCENE 9 */
+
+.scene9{
+
+    position:relative;
+
+    width:100%;
+
+    height:3300px;
+
+    background:#F3F1EE;
+
+    overflow:hidden;
+
+}
+
+.dance1,.dance2,.dance3,.dance4,.dance5{
+
+    position:absolute;
+
+    width:500px;
+
+    opacity:0;
+
+    z-index:5;
+
+}
+
+.dance1{
+
+    left:0%;
+
+    top:700px;
+
+    opacity:1;
+
+}
+
+.dance2{
+
+    right:8%;
+
+    top:1000px;
+
+}
+
+.dance3{
+
+    left:8%;
+
+    top:1450px;
+
+}
+
+.dance4{
+
+    right:8%;
+
+    top:1900px;
+
+}
+
+.dance5{
+
+    left:8%;
+
+    top:2350px;
+
+}
+
+.foot1,.foot2,.foot3,.foot4,.foot5,.foot6,
+.foot7,.foot8,.foot9,.foot10,.foot11,.foot12,
+.foot13,.foot14,.foot15,.foot16,.foot17,.foot18,
+.foot19,.foot20,.foot21,.foot22,.foot23,.foot24{
+
+    position:absolute;
+
+    width:90px;
+
+    opacity:0;
+
+    z-index:4;
+
+}
+
+
+.foot1{left:31%;top:1030px;transform:rotate(30deg);}
+.foot2{left:30%;top:1100px;transform:rotate(7deg);}
+.foot3{left:45%;top:1050px;transform:rotate(-25deg);}
+.foot4{left:44%;top:1120px;transform:rotate(18deg);}
+.foot5{left:59%;top:1070px;transform:rotate(-25deg);}
+.foot6{left:58%;top:1140px;transform:rotate(18deg);}
+
+
+.foot7{left:53%;top:1400px;transform:rotate(160deg);}
+.foot8{left:52%;top:1360px;transform:rotate(180deg);}
+.foot9{left:46%;top:1440px;transform:rotate(150deg);}
+.foot10{left:45%;top:1410px;transform:rotate(-180deg);}
+.foot11{left:38%;top:1490px;transform:rotate(160deg);}
+.foot12{left:37%;top:1460px;transform:rotate(-180deg);}
+
+
+.foot13{left:31%;top:1800px;transform:rotate(-30deg);}
+.foot14{left:30%;top:1870px;transform:rotate(18deg);}
+.foot15{left:45%;top:1840px;transform:rotate(-30deg);}
+.foot16{left:44%;top:1910px;transform:rotate(18deg);}
+.foot17{left:59%;top:1850px;transform:rotate(-30deg);}
+.foot18{left:58%;top:1910px;transform:rotate(18deg);}
+
+.foot19{left:56%;top:2330px;transform:rotate(160deg);}
+.foot20{left:55%;top:2270px;transform:rotate(-190deg);}
+.foot21{left:48%;top:2370px;transform:rotate(160deg);}
+.foot22{left:48%;top:2300px;transform:rotate(-190deg);}
+.foot23{left:41%;top:2400px;transform:rotate(160deg);}
+.foot24{left:40%;top:2340px;transform:rotate(-190deg);}
+
+
+.poem9,.poem91,.poem92,.poem93{
+
+    position:absolute;
+
+    font-family:"Have Heart One";
+
+    font-size:90px;
+
+    line-height:1;
+
+    color:#4B1B14;
+
+    opacity:0;
+
+    z-index:6;
+
+}
+
+
+.poem9{
+
+    right:35%;
+
+    top:1100px;
+
+}
+
+.poem91{
+
+    left:35%;
+
+    top:1500px;
+
+}
+
+.poem92{
+
+    right:40%;
+
+    top:1970px;
+
+}
+
+.poem93{
+
+    left:36%;
+
+    top:2467px;
+
+}
+
+
+.dance2,.dance3,.dance4,.dance5,
+
+.foot1,.foot2,.foot3,.foot4,.foot5,.foot6,
+.foot7,.foot8,.foot9,.foot10,.foot11,.foot12,
+.foot13,.foot14,.foot15,.foot16,.foot17,.foot18,
+.foot19,.foot20,.foot21,.foot22,.foot23,.foot24,
+
+.poem9,.poem91,.poem92,.poem93{
+
+    will-change:transform,opacity;
+
+}
+
+.end{
+    display:block;
+    font-family:"Have Heart One";
+    font-size:250px;
+    color:#4B1B14;
+    text-align:center;
+    line-height:.75;
+    margin-top:2850px;
+}
