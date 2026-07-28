@@ -179,17 +179,13 @@ function createSnow(){
 
     snow.className = "snow";
 
-    // vị trí ngẫu nhiên
     snow.style.left = Math.random()*100 + "%";
 
-    // kích thước
     const size = 700 + Math.random()*70;
     snow.style.width = size + "px";
 
-    // độ mờ
     snow.style.opacity = 0.35 + Math.random()*0.65;
 
-    // tốc độ
     const duration = 8 + Math.random()*6;
 
     snow.style.animation = `fall ${duration}s linear forwards`;
@@ -315,7 +311,7 @@ scene4.addEventListener("click",()=>{
 
 });
 
-/* PƠEM */
+/* POEM */
 
 const poem40 = document.querySelector(".poem40");
 
@@ -431,7 +427,6 @@ document.querySelectorAll(".chaos").forEach(word=>{
 
         span.style.display = "inline-block";
 
-        // Ban đầu hỗn loạn
         const x = (Math.random()-0.5)*180;
         const y = (Math.random()-0.5)*120;
         const r = (Math.random()-0.5)*180;
@@ -531,7 +526,6 @@ function sprayPerfume(){
 
     spray.innerHTML = "";
 
-    // Lắc chai
     gsap.timeline()
 
     .to(".perfumeBottle",{
@@ -1100,16 +1094,10 @@ footprints.forEach((foot)=>{
 
 });
 
-/*=========================
-        SCENE 9
-=========================*/
+/* SCENE 9 */
 
 gsap.registerPlugin(ScrollTrigger);
 
-
-/*-------------------------
-    START STATE
--------------------------*/
 
 gsap.set([
 
@@ -1142,10 +1130,6 @@ gsap.set([
 
 });
 
-
-/*====================================================
-                CHECKPOINT 1
-====================================================*/
 
 let tl1 = gsap.timeline({
 
@@ -1266,11 +1250,6 @@ tl1
 },"<");
 
 
-
-/*====================================================
-                CHECKPOINT 2
-====================================================*/
-
 let tl2 = gsap.timeline({
 
     scrollTrigger:{
@@ -1379,11 +1358,6 @@ tl2
 },"<");
 
 
-
-/*====================================================
-                CHECKPOINT 3
-====================================================*/
-
 let tl3 = gsap.timeline({
 
     scrollTrigger:{
@@ -1397,7 +1371,6 @@ let tl3 = gsap.timeline({
     }
 
 });
-
 
 tl3
 
@@ -1490,11 +1463,6 @@ tl3
     duration:.4
 },"<");
 
-
-
-/*====================================================
-                CHECKPOINT 4
-====================================================*/
 
 let tl4 = gsap.timeline({
 
